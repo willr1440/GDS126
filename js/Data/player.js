@@ -148,7 +148,22 @@ var playerData ={
 				{width:64, height:64, startX:3776, startY:0}
 				
 			]
+		},
+		bullets:
+		{
+			fps: 8,
+			cycle: true,
+			frames:
+			[
+				{width:64, height:64, startx:3840, starty:0},
+				{width:64, height:64, startx:3904, starty:0},
+				{width:64, height:64, startx:3968, starty:0},
+				{width:64, height:64, startx:4032, starty:0}
+			]
 		}
 	}
 		
 }
+
+	
+
