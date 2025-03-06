@@ -20,14 +20,19 @@ class SoundManager
            throw new Error(`Sound is not loaded`)
         }
     }
+
+
 }
+
+
 let soundNodes=document.querySelectorAll(`audio`)
 if(soundNodes.length>0) var sounds=new SoundManager(soundNodes)
 soundNodes=null
 
 
+const audio = sounds.play(`backgroundS`);
 
 
-
-
-//document.addEventListener(`click`, ()=>  sounds.play(`splode`,.5))
+document.addEventListener(`click`, ()=>  sounds.play(`backgroundS`,0));
+audio.volume(`backgroundS`) = .5;
+audio.loop = true;
